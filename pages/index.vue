@@ -1,19 +1,23 @@
 <template>
-    <div>
-        <nuxt-link to="/about">About</nuxt-link>
-        <br>
-        <nuxt-link to="/notes">Notes</nuxt-link>
-        <br>
-        <nuxt-link :to="`/notes/${randomNumber()}`">Notes By Id</nuxt-link>
-        
-        <h1>Welcome</h1>
-    </div>
+   <br>
+   <button @click="boolean=!boolean">Add New {{ boolean }}</button>
+   <br>
+
+   <component :is="boolean ? newNote : noteCard"/>
+
+   <!-- <NewNote/> -->
+
+   <br>
+   <br>
+
+   <!-- <noteCard/> -->
 </template>
 
 <script setup>
-const randomNumber = () => {
-Math.floor(Math.random() * 100) + 1;
-} 
+const newNote = resolveComponent('NewNote')
+const noteCard = resolveComponent('NoteCard')
+
+const boolean = ref(false)
 </script>
 
 <style></style>
