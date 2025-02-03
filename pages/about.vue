@@ -8,7 +8,8 @@
 
 <script setup>
 definePageMeta({
-    layout:false
+    layout:false,
+    middleware: ['named']
 })
 
 function enableLayout(params) {
