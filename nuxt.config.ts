@@ -20,12 +20,9 @@ export default defineNuxtConfig({
           }
         }
       }
-
       setMiddleware(pages)
-      }
     }
-})
-
+},
 // berikut hasil penjelasan Copilot vscode
 
 // Hooks dalam Nuxt.js adalah cara untuk mengeksekusi kode pada berbagai titik dalam siklus hidup aplikasi Nuxt. Mereka memungkinkan Anda untuk menambahkan logika khusus atau memodifikasi perilaku default Nuxt pada berbagai tahap, seperti saat halaman sedang diperluas, saat build sedang berlangsung, atau saat server sedang dimulai.
@@ -37,3 +34,15 @@ export default defineNuxtConfig({
 // page.path === '/aout': Kondisi untuk memeriksa apakah path halaman adalah /aout.
 // page.meta ||= {}: Inisialisasi objek meta jika belum ada.
 // page.meta.middleware = ['Named']: Menambahkan middleware Named ke halaman.
+
+    imports: {
+        dirs: [
+            'composables',
+            'composables/**',
+        ]
+    }
+    // 'composables': Direktori composables akan diimpor secara otomatis.
+    // 'composables/**': Semua subdirektori di dalam composables juga akan diimpor secara otomatis.
+    // Dengan menggunakan pengaturan ini, Anda dapat mengimpor modul atau file dari direktori composables dan subdirektorinya tanpa perlu menuliskan pernyataan impor di setiap file.
+})
+

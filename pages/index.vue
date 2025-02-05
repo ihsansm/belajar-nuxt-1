@@ -1,23 +1,12 @@
 <template>
-   <br>
-   <button @click="boolean=!boolean">Add New {{ boolean }}</button>
-   <br>
 
-   <component :is="boolean ? newNote : noteCard"/>
-
-   <!-- <NewNote/> -->
-
-   <br>
-   <br>
-
-   <!-- <noteCard/> -->
+<h2>Recent Notes: {{ foo }}</h2>
+ <NoteCard/>
 </template>
 
 <script setup>
-const newNote = resolveComponent('NewNote')
-const noteCard = resolveComponent('NoteCard')
+const foo=useFoo()
 
-const boolean = ref(false)
 </script>
 
 <style></style>
