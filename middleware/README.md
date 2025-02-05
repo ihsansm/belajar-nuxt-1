@@ -1,0 +1,1 @@
+# middleware global (dieksekusi berlaku di semua pages), kalau bukan global maka di page tertentu aja yang sudah ditentukan
