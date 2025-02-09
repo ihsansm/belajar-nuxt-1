@@ -11,7 +11,7 @@
 const foo=useFoo()
 // const {$hello,$consoleIt}=useNuxtApp()
 // console.log('useNextApp(): ', useNuxtApp());
-const {data}=await useFetch('api/hello')
+const {data}=await useFetch('/api/hello')
 </script>
 
 <style></style>
