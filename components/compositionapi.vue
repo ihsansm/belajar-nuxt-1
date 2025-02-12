@@ -1,11 +1,13 @@
 <template>
-    <div>{{ title }}</div>
+    <div>
+        <h1>{{ title }}</h1>
+    </div>
 </template>
 
 <script setup>
-export default {
-const title=referensi('Composition Api')
-
+const title=ref('Composition Api')
+const hello=()=>{
+    console.log('Hello from Composition Api')
 }
 </script>
 

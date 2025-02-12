@@ -1,16 +1,23 @@
 <template>
+    <Banner/>
+
+    <composition-api/>
+    
+    <br>
+    
+    <options-api/>
 
 <h2>Recent Notes: {{ foo }}</h2>
- <!-- {{ $hello('Nuxt!') }}
- {{ $consoleIt(foo) }} -->
+{{ $hello('Nuxt!') }}
+ {{ $consoleIt(foo) }}
   <p>{{ data }}</p>
  <NoteCard/>
 </template>
 
 <script setup>
 const foo=useFoo()
-// const {$hello,$consoleIt}=useNuxtApp()
-// console.log('useNextApp(): ', useNuxtApp());
+const {$hello,$consoleIt}=useNuxtApp()
+console.log('useNextApp(): ', useNuxtApp());
 const {data}=await useFetch('/api/hello')
 </script>
 
