@@ -40,9 +40,13 @@ export default defineNuxtConfig({
             'composables',
             'composables/**',
         ]
-    }
+    },
     // 'composables': Direktori composables akan diimpor secara otomatis.
     // 'composables/**': Semua subdirektori di dalam composables juga akan diimpor secara otomatis.
     // Dengan menggunakan pengaturan ini, Anda dapat mengimpor modul atau file dari direktori composables dan subdirektorinya tanpa perlu menuliskan pernyataan impor di setiap file.
-})
+
+    plugins: [
+      '~/plugins/foo/my-plugin.ts'
+    ],
+  })
 

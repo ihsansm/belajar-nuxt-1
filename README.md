@@ -1,3 +1,3 @@
 # Nuxt 
 
-
+BASIC CONCEPTS OF NUXT-JS
