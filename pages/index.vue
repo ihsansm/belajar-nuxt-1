@@ -1,6 +1,6 @@
 <template>
     <Banner/>
-    <NewNote/>
+   
 
     <composition-api/>
     

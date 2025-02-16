@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 v-bind:class="isRed ? 'isRed' : 'isGreen'">
+        <h1 v-bind:class="isRed ? 'isRed' : 'isGreen'" v-debug>
             Welcome To Out Notes App!
         </h1>
         <img :src="imgSrc" alt="" width="200"/>

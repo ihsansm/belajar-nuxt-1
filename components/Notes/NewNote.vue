@@ -7,4 +7,7 @@
 <script setup>
 const newNote = ref('');
 
+const vFocus = {
+    mounted: (el) => el.focus(),
+};
 </script>
