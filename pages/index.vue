@@ -1,5 +1,6 @@
 <template>
     <Banner/>
+   
 
     <composition-api/>
     
@@ -12,6 +13,7 @@
  {{ $consoleIt(foo) }}
   <p>{{ data }}</p>
  <NoteCard/>
+ <br>
 </template>
 
 <script setup>
