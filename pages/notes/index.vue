@@ -3,7 +3,7 @@
     <br>
     <button @click="boolean=!boolean">Add New</button>
     <br>
-    <component :is="boolean ? newNote : noteCard">Add New {{ boolean }}</button>
+    <!-- <component :is="boolean ? newNote : noteCard">Add New {{ boolean }}</button> -->
 
 <br>
 <br>
