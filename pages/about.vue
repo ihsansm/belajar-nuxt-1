@@ -4,6 +4,7 @@
     </h1>
 
     <button @click="enableLayout()">Update Layout</button>
+    <NoteCard/>
 </template>
 
 <script setup>
