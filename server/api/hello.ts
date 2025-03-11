@@ -1,5 +1,6 @@
 export default defineEventHandler((event)=>{
     return {
-        hello:'world'
+        hello:'world',
+        history: 'message masuk'
     }
 })
